@@ -16,6 +16,10 @@
 a {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
 /* ******************** utilities ******************** */
 .grey-txt {
   color: #b2b2b2;
@@ -184,4 +188,33 @@ nav a {
   font-weight: 700;
   font-size: 10px;
   color: #b2b2b2;
+}
+
+/* recent-played */
+.recent-played {
+  color: white;
+}
+.recent-played h1 {
+  padding: 15px 0;
+}
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.songs .card {
+  min-width: 215px;
+  width: calc(100% / 6 - 10px);
+}
+.description {
+  text-align: center;
+}
+.description h2 {
+  font-size: 15px;
+}
+.description h3 {
+  color: #b2b2b2;
+  padding: 10px 0;
+  font-size: 10px;
 }
