@@ -1,5 +1,23 @@
+/* *Generics* */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#main-flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-box {
+  flex-grow: 1;
+  background-color: #141922;
+}
+
+footer {
+  flex-basis: 100px;
+  background-color: #282828;
 }
