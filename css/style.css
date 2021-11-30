@@ -35,12 +35,15 @@ a {
 .container-5 {
   margin: 5px;
 }
+.container-10 {
+  margin: 10px;
+}
 /* padding */
 .pb-5 {
   padding-bottom: 5px;
 }
 
-/* * main-flex********* */
+/* ******************** main-flex********* */
 #main-box {
   flex-grow: 1;
   background-color: #141922;
@@ -134,14 +137,6 @@ footer {
   border-radius: 50%;
   overflow: hidden;
 }
-/* ************************ main ****************************** */
-main {
-  position: relative;
-  flex-grow: 1;
-  max-height: calc(100vh - 80px);
-  max-width: calc(100vw - 50px);
-  overflow: auto;
-}
 
 /* ************************ header ****************************** */
 
@@ -158,4 +153,35 @@ header {
 
 header a {
   margin-right: 5px;
+  transform: scale(0.8);
+}
+
+/* ************************ main ****************************** */
+main {
+  position: relative;
+  flex-grow: 1;
+  max-height: calc(100vh - 80px);
+  max-width: calc(100vw - 50px);
+  overflow: auto;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav li {
+  list-style: none;
+  padding: 15px;
+}
+nav a {
+  font-weight: 700;
+  font-size: 10px;
+  color: #b2b2b2;
 }
