@@ -211,9 +211,24 @@ nav a {
   text-align: center;
 }
 .description h2 {
+  padding: 10px 0;
   font-size: 15px;
 }
 .description h3 {
+  color: #b2b2b2;
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+/* custom music */
+.custom-music {
+  color: white;
+}
+
+.custom-music h1 {
+  padding-top: 15px;
+}
+.custom-music > h3 {
   color: #b2b2b2;
   padding: 10px 0;
   font-size: 10px;
