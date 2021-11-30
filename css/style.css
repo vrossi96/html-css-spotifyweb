@@ -204,7 +204,7 @@ nav a {
 }
 
 .songs .card {
-  min-width: 215px;
+  min-width: 235px;
   width: calc(100% / 6 - 10px);
 }
 .description {
