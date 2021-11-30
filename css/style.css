@@ -20,6 +20,11 @@
   filter: invert(0.3);
 }
 
+/* padding */
+.pb-5 {
+  padding-bottom: 5px;
+}
+
 /* * main-flex********* */
 #main-box {
   flex-grow: 1;
@@ -55,8 +60,7 @@ main {
 }
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  left: 50px;
   height: 80px;
   width: 100%;
   background-color: rgba(8, 11, 18, 0.507);
