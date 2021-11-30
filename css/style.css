@@ -30,6 +30,11 @@ a {
   border-radius: 20px;
   color: white;
 }
+
+/* container */
+.container-5 {
+  margin: 5px;
+}
 /* padding */
 .pb-5 {
   padding-bottom: 5px;
@@ -53,25 +58,44 @@ footer {
 
 /* *********************** sidebar **************************** */
 #sidebar {
-  flex-basis: 50px;
   background-color: black;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   z-index: 1;
+}
+#sidebar > .container-10 {
+  display: flex;
+  flex-direction: column;
 }
 
 #sidebar a {
+  width: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-#sidebar img {
-  padding-right: 5px;
+#sidebar a > img {
+  width: 30px;
 }
 #sidebar span {
   display: none;
   color: #b2b2b2;
 }
+/* playlist */
+#playlist {
+  display: none;
+}
+#playlist i {
+  color: black;
+  padding: 10px 10px;
+  background-color: #b2b2b2;
+  margin-right: 5px;
+}
+#playlist p {
+  color: #b2b2b2;
+  padding-top: 10px;
+}
+
 /* ************************ main ****************************** */
 main {
   position: relative;
