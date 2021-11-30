@@ -12,12 +12,32 @@
   flex-direction: column;
 }
 
+/* * main-flex********* */
 #main-box {
   flex-grow: 1;
   background-color: #141922;
 }
 
 footer {
-  flex-basis: 100px;
+  flex-basis: 80px;
   background-color: #282828;
+}
+
+/* ******************** main-box *************************** */
+#main-box {
+  display: flex;
+}
+
+#sidebar {
+  flex-basis: 50px;
+  background-color: black;
+}
+
+main {
+  flex-grow: 1;
+}
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(8, 11, 18, 0.507);
 }
