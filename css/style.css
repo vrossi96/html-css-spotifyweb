@@ -63,9 +63,11 @@ footer {
   flex-direction: column;
   z-index: 1;
 }
-#sidebar > .container-10 {
+#sidebar > .container-5 {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 #sidebar a {
@@ -80,6 +82,9 @@ footer {
 #sidebar span {
   display: none;
   color: #b2b2b2;
+}
+#sidebar h2 {
+  display: none;
 }
 /* playlist */
 #playlist {
@@ -96,6 +101,39 @@ footer {
   padding-top: 10px;
 }
 
+/* profile */
+#profile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  color: #b2b2b2;
+}
+#profile .download {
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #b2b2b2; */
+}
+#profile .download {
+  width: 25px;
+  padding-bottom: 15px;
+}
+#profile .download img {
+  width: 20px;
+}
+
+#profile .account {
+  display: flex;
+}
+
+#profile .account a {
+  width: 30px;
+  height: 30px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  overflow: hidden;
+}
 /* ************************ main ****************************** */
 main {
   position: relative;
