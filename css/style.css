@@ -34,6 +34,7 @@ img {
   border: 1px solid white;
   border-radius: 20px;
   color: white;
+  transition: 0.5s;
 }
 
 /* container */
@@ -387,4 +388,13 @@ footer {
   height: 3px;
   border-radius: 5px;
   background-color: white;
+}
+
+/* ********************** hover effects ******************************** */
+.btn:hover {
+  transform: scale(1);
+}
+
+#top-nav a:hover {
+  color: white;
 }

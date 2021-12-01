@@ -77,6 +77,9 @@
   .current-actions a {
     padding-right: 10px;
   }
+  #top-nav a {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
