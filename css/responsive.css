@@ -1,18 +1,32 @@
-@media screen and (min-width: 577px) {
-  .songs .card {
-    width: calc(100% / 4 - 10px);
+@media screen and (max-height: 550px) {
+  footer {
+    position: fixed;
+    height: 80px;
+    z-index: 1;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
   }
+  #profile {
+    display: none;
+  }
+}
+@media screen and (min-width: 550px) {
   /* Sidebar**************************** */
   #sidebar {
-    width: 600px;
+    flex-basis: 600px;
+    max-width: 200px;
   }
   #sidebar .big-logo {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
   }
   #sidebar .big-logo img {
-    width: 100%;
-    margin: 15px 0 25px 0;
+    width: auto;
+    max-height: 50px;
   }
+  /* margin: 10px 0 25px 0; */
   #sidebar .small-logo {
     display: none;
   }
@@ -45,5 +59,31 @@
   /* ********************** footer ********************************** */
   .time-actions {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  #volume {
+    justify-content: space-evenly;
+  }
+  .songs .card {
+    width: calc(100% / 4 - 10px);
+  }
+  .current-actions {
+    padding-left: 25px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .current-actions a {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .songs .card {
+    width: calc(100% / 6 - 10px);
+  }
+  .recent-played {
+    flex-grow: 1;
   }
 }
