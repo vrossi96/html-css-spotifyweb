@@ -287,6 +287,9 @@ main {
   font-size: 10px;
 }
 
+.custom-music a {
+  display: block;
+}
 /* Popular artists */
 .popular-artists {
   color: white;
@@ -304,6 +307,10 @@ main {
 .popular-artists .round {
   border-radius: 50%;
   overflow: hidden;
+}
+
+.popular-artists a {
+  display: block;
 }
 
 /* ********************** footer ************************************ */
