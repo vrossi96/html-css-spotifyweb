@@ -15,6 +15,7 @@
 
 a {
   text-decoration: none;
+  color: #b2b2b2;
 }
 
 img {
@@ -51,11 +52,6 @@ img {
 #main-box {
   flex-grow: 1;
   background-color: #141922;
-}
-
-footer {
-  flex-basis: 80px;
-  background-color: #282828;
 }
 
 /* ******************** main-box *************************** */
@@ -170,21 +166,21 @@ main {
 }
 
 /* nav */
-nav {
+#top-nav {
   display: flex;
   justify-content: center;
   margin-top: 80px;
 }
-nav ul {
+#top-nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-nav li {
+#top-nav li {
   list-style: none;
   padding: 15px;
 }
-nav a {
+#top-nav a {
   font-weight: 700;
   font-size: 10px;
   color: #b2b2b2;
@@ -204,7 +200,7 @@ nav a {
 }
 
 .songs .card {
-  min-width: 235px;
+  min-width: 150px;
   width: calc(100% / 6 - 10px);
 }
 .description {
@@ -251,4 +247,75 @@ nav a {
 .popular-artists .round {
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* ********************** footer ************************************ */
+footer {
+  flex-basis: 80px;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+#current-song,
+#volume {
+  width: 20%;
+}
+#timebar {
+  flex-grow: 1;
+}
+
+/* current song****************************** */
+#current-song {
+  display: flex;
+}
+#current-song img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* current info */
+.current-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.current-info h2 {
+  color: white;
+  font-size: 12px;
+}
+.current-info h3 {
+  color: #b2b2b2;
+  font-size: 10px;
+}
+
+/* current actions */
+.current-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* timebar******************************** */
+#timebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-actions {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#timebar a {
+  color: white;
+}
+.time-actions i {
+  font-size: 1.3rem;
+}
+.time-actions .fa-play-circle {
+  font-size: 2rem;
 }
