@@ -115,7 +115,7 @@ img {
 }
 #playlist p {
   color: #b2b2b2;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 0.8rem;
 }
 
@@ -131,18 +131,18 @@ img {
 #profile .download {
   display: flex;
   align-items: center;
-  /* border-bottom: 1px solid #b2b2b2; */
 }
 #profile .download {
   width: 25px;
   padding-bottom: 15px;
 }
 #profile .download img {
-  width: 20px;
+  width: 35px;
 }
 
 #profile .account {
   display: flex;
+  align-items: center;
 }
 
 #profile .account a {
@@ -215,7 +215,6 @@ main {
 }
 
 .songs .card {
-  min-width: 150px;
   width: calc(100% / 2 - 10px);
 }
 .description {

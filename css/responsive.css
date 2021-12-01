@@ -25,4 +25,25 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  /* Profile****************************** */
+  #profile {
+    width: 100%;
+  }
+  #profile .download {
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #b2b2b2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  #profile .download img {
+    padding-right: 10px;
+  }
+  #profile .account h2 {
+    padding-left: 10px;
+  }
+  /* ********************** footer ********************************** */
+  .time-actions {
+    width: 60%;
+  }
 }
