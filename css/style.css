@@ -314,8 +314,34 @@ footer {
   color: white;
 }
 .time-actions i {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .time-actions .fa-play-circle {
   font-size: 2rem;
+}
+
+/* Time */
+.time {
+  width: 80%;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.time span {
+  width: auto;
+  font-size: 0.8rem;
+  color: white;
+}
+.time .bar {
+  width: 80%;
+  height: 3px;
+  background-color: #a3a3a3;
+  border-radius: 5px;
+}
+.bar .actual-bar {
+  width: 30%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: white;
 }
