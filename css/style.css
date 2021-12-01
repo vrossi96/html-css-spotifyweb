@@ -240,12 +240,10 @@ main {
   visibility: hidden;
 }
 
-/* ! check later */
 .picture img {
-  object-fit: cover;
+  display: block;
   height: 100%;
 }
-/* ! end check */
 
 .play-now i {
   font-size: 60px;
