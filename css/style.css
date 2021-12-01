@@ -169,6 +169,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 1;
 }
 
 header a {
@@ -454,7 +455,7 @@ footer {
 }
 /* ********************** hover effects ******************************** */
 .btn:hover {
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 #top-nav a:hover {
