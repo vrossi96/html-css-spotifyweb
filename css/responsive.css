@@ -12,9 +12,12 @@
   }
 }
 @media screen and (min-width: 550px) {
+  header {
+    width: calc(100vw - 200px);
+  }
   /* Sidebar**************************** */
   #sidebar {
-    flex-basis: 600px;
+    min-width: 200px;
     max-width: 200px;
   }
   #sidebar .big-logo {
