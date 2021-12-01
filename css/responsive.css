@@ -1,0 +1,28 @@
+@media screen and (min-width: 577px) {
+  .songs .card {
+    width: calc(100% / 4 - 10px);
+  }
+  /* Sidebar**************************** */
+  #sidebar {
+    width: 600px;
+  }
+  #sidebar .big-logo {
+    display: block;
+  }
+  #sidebar .big-logo img {
+    width: 100%;
+    margin: 15px 0 25px 0;
+  }
+  #sidebar .small-logo {
+    display: none;
+  }
+  #sidebar span,
+  #sidebar h2 {
+    display: inline-block;
+  }
+  #playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

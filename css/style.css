@@ -66,13 +66,20 @@ img {
   flex-direction: column;
   z-index: 1;
 }
+#under-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 #sidebar > .container-5 {
   height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-
+#sidebar .big-logo {
+  display: none;
+}
 #sidebar a {
   width: auto;
   display: flex;
@@ -85,13 +92,20 @@ img {
 #sidebar span {
   display: none;
   color: #b2b2b2;
+  font-size: 0.8rem;
 }
 #sidebar h2 {
   display: none;
+  color: white;
+  font-size: 0.9rem;
+  padding: 15px 0 10px 0;
 }
 /* playlist */
 #playlist {
   display: none;
+}
+#playlist-list {
+  overflow: auto;
 }
 #playlist i {
   color: black;
@@ -102,6 +116,7 @@ img {
 #playlist p {
   color: #b2b2b2;
   padding-top: 10px;
+  font-size: 0.8rem;
 }
 
 /* profile */
