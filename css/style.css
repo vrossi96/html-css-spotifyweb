@@ -94,12 +94,16 @@ img {
   display: none;
   color: #b2b2b2;
   font-size: 0.8rem;
+  font-weight: 800;
 }
 #sidebar h2 {
   display: none;
   color: white;
   font-size: 0.9rem;
   padding: 15px 0 10px 0;
+}
+#sidebar p {
+  font-weight: 800;
 }
 /* playlist */
 #playlist {
@@ -397,4 +401,15 @@ footer {
 
 #top-nav a:hover {
   color: white;
+}
+
+#sidebar a:hover span,
+#sidebar a:hover p {
+  color: white;
+}
+#sidebar a:hover i[class="fas fa-plus"] {
+  background-color: white;
+}
+#sidebar a:hover .grey-svg {
+  filter: invert(0);
 }
