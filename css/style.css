@@ -222,6 +222,45 @@ main {
 .songs .card {
   width: calc(100% / 2 - 10px);
 }
+
+.picture {
+  position: relative;
+  transition: 0.3s;
+}
+.play-now {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+/* ! check later */
+.picture img {
+  object-fit: cover;
+  height: 100%;
+}
+/* ! end check */
+
+.play-now i {
+  font-size: 60px;
+  color: white;
+}
+
+.picture:hover .play-now {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9),
+    rgba(250, 250, 250, 0.2),
+    rgba(0, 0, 0, 0.9)
+  );
+  visibility: visible;
+}
+
 .description {
   text-align: center;
 }
@@ -443,7 +482,7 @@ footer a:hover h3 {
 footer a:hover i {
   color: white;
 }
-i[class*="fa-play-circle"] {
+footer i[class*="fa-play-circle"] {
   transition: 0.3s;
 }
 footer a:hover i[class*="fa-play-circle"] {
@@ -452,7 +491,7 @@ footer a:hover i[class*="fa-play-circle"] {
 
 .bar:hover .actual-bar,
 .volume-bar:hover .actual-volume {
-  background-color: #9ad887;
+  background-color: #74c26a;
 }
 .bar:hover .white-circle,
 .volume-bar:hover .white-circle {
