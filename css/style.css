@@ -201,7 +201,7 @@ main {
 
 .songs .card {
   min-width: 150px;
-  width: calc(100% / 6 - 10px);
+  width: calc(100% / 2 - 10px);
 }
 .description {
   text-align: center;
@@ -260,7 +260,7 @@ footer {
 
 #current-song,
 #volume {
-  width: 20%;
+  width: 25%;
 }
 #timebar {
   flex-grow: 1;
@@ -280,7 +280,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 .current-info h2 {
   color: white;
@@ -305,7 +306,7 @@ footer {
   align-items: center;
 }
 .time-actions {
-  width: 25%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -322,7 +323,7 @@ footer {
 
 /* Time */
 .time {
-  width: 80%;
+  width: 90%;
   display: flex;
   padding-top: 10px;
   align-items: center;
@@ -338,8 +339,36 @@ footer {
   height: 3px;
   background-color: #a3a3a3;
   border-radius: 5px;
+  margin: 0 3px;
 }
-.bar .actual-bar {
+.actual-bar {
+  width: 30%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Volume ********************************/
+#volume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#volume i {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.volume-bar {
+  width: 50%;
+  height: 3px;
+  background-color: #a3a3a3;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.actual-volume {
   width: 30%;
   height: 3px;
   border-radius: 5px;
