@@ -111,7 +111,14 @@ img {
 }
 #playlist-list {
   overflow: auto;
+  /* ! list */
+  width: 100%;
+  height: 180px;
 }
+#playlist-list a {
+  justify-content: flex-start;
+}
+
 #playlist i {
   color: black;
   padding: 10px 10px;
