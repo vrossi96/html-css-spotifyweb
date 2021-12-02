@@ -15,6 +15,24 @@
   header {
     width: calc(100vw - 200px);
   }
+
+  .container-5 {
+    margin-left: 0;
+  }
+  .container-5 > * {
+    padding-left: 5px;
+  }
+  #under-logo {
+    padding-left: 0;
+  }
+  #under-logo > * {
+    padding-left: 5px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+  #under-logo > a:first-child {
+    border-left: 2px solid #74c26a;
+  }
   /* Sidebar**************************** */
   #sidebar {
     min-width: 200px;
