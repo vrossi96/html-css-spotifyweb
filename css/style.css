@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -66,6 +67,11 @@ img {
   display: flex;
   flex-direction: column;
   z-index: 1;
+  height: calc(100vh - 80px);
+  overflow-y: hidden;
+}
+#sidebar > div > * {
+  flex-shrink: 0;
 }
 #under-logo {
   display: flex;
@@ -112,7 +118,9 @@ img {
 }
 #playlist-list {
   overflow: auto;
+  height: 30vh;
   width: 100%;
+  min-height: 100px;
 }
 #playlist-list a {
   justify-content: flex-start;
@@ -134,6 +142,7 @@ img {
 #profile {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   color: #b2b2b2;
 }
 #profile .download {
@@ -184,7 +193,7 @@ header a {
 main {
   position: relative;
   flex-grow: 1;
-  max-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
   max-width: calc(100vw - 50px);
   overflow: auto;
 }
@@ -329,11 +338,18 @@ main {
 
 /* ********************** footer ************************************ */
 footer {
+  min-height: 80px;
   flex-basis: 80px;
   background-color: #282828;
   display: flex;
   align-items: center;
   padding: 0 5px;
+  /* for vertical shrink of page */
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
 }
 
 #current-song,

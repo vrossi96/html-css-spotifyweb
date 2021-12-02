@@ -7,9 +7,6 @@
     bottom: 0;
     left: 0;
   }
-  #profile {
-    display: none;
-  }
 }
 @media screen and (min-width: 550px) {
   header {
