@@ -206,8 +206,19 @@ main {
 }
 #top-nav li {
   list-style: none;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+#top-nav .green-bar {
+  width: 50%;
+  height: 2px;
+  background-color: #74c26a;
+  margin-top: 15px;
+}
+
 #top-nav a {
   font-weight: 700;
   font-size: 10px;
@@ -459,7 +470,7 @@ footer {
   width: 20px;
   position: absolute;
   top: 0;
-  transform: translateY(-45%);
+  transform: translate(50%, -45%);
   right: 0;
   background-color: white;
   border-radius: 50%;
